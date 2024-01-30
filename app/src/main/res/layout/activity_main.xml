@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- content activity_main.xml
+        Primary Layout File for this Project
+        Created By: Aidan McCormick
+        Created On 1/29/2024
+        Last Modified By Aidan McCormick
+        Last Modified On 1/29/2024
+        Assignment/Project: A290 Android Development
+        Part Of: Android Calling Project, refers to MainActivity.Java -->
+
+    <TextView
+        android:id="@+id/txt_helloWorld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_textview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573" />
+
+    <Button
+        android:id="@+id/btn_firstButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="@string/send_button"
+        app:layout_constraintBottom_toTopOf="@+id/txt_helloWorld"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_secondTextView"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <Button
+        android:id="@+id/btn_secondButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/submit_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_helloWorld" />
+
+    <TextView
+        android:id="@+id/txt_secondTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/second_textview"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_helloWorld"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519" />
+
+    <CheckBox
+        android:id="@+id/chck_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_secondButton"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Switch
+        android:id="@+id/swtch_switchOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/first_switch"
+        app:layout_constraintBottom_toTopOf="@+id/txt_helloWorld"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_secondTextView"
+        app:layout_constraintVertical_bias="0.218" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<!-- content activity_main.xml
+    Primary Layout File for this Project
+    Created By: Aidan McCormick
+    Created On 1/29/2024
+    Last Modified By Aidan McCormick
+    Last Modified On 1/29/2024
+    Assignment/Project: A290 Android Development
+    Part Of: Android Calling Project, refers to MainActivity.Java -->
+
+<resources>
+    <string name="first_textview"> Hello Universe!!! Android Calling!!! </string>
+    <string name = 'submit_button'> Submit </string>
+    <string name = "second_textview">  Welcome!! </string>
+    <string name = "first_switch" > Yes </string>
+    <string name = "send_button" > Send </string>
+</resources>
